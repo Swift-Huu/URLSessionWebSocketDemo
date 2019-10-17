@@ -69,7 +69,7 @@ wss.on('connection', function(ws) {
         } else {
             broadcastSend("message", message, nickname);
         }
-        console.log(`client ${client_uuid} message`);
+        console.log(`client ${client_uuid} 发送 message`, message);
     });
     /*监听断开连接*/
     ws.on('close', function() {

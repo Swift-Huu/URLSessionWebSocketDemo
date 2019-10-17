@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63538DE6235841CC00D4259B /* MySessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63538DE5235841CB00D4259B /* MySessionManager.swift */; };
 		9E3691112354C2FE00C40978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3691102354C2FE00C40978 /* AppDelegate.swift */; };
 		9E3691132354C2FE00C40978 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3691122354C2FE00C40978 /* SceneDelegate.swift */; };
 		9E3691152354C2FE00C40978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3691142354C2FE00C40978 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		170B2143D2C696ADA9730114 /* Pods_WebSocketDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocketDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63538DE5235841CB00D4259B /* MySessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySessionManager.swift; sourceTree = "<group>"; };
 		63B8841DB60F8CF5DB2D0843 /* Pods-WebSocketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketDemo.debug.xcconfig"; path = "Target Support Files/Pods-WebSocketDemo/Pods-WebSocketDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9E36910D2354C2FE00C40978 /* WebSocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3691102354C2FE00C40978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				9E3691262354D06C00C40978 /* SocketRocketViewController.m */,
 				9E4C61F123560ED000E6337B /* StarscreamViewController.swift */,
 				9E4C61F32356163800E6337B /* SessionWebSocketViewController.swift */,
+				63538DE5235841CB00D4259B /* MySessionManager.swift */,
 				9E3691142354C2FE00C40978 /* ViewController.swift */,
 				9E3691162354C2FE00C40978 /* Main.storyboard */,
 				9E3691192354C30100C40978 /* Assets.xcassets */,
@@ -234,6 +237,7 @@
 				9E9B80E02355FA600089AE50 /* HUD.swift in Sources */,
 				9E3691132354C2FE00C40978 /* SceneDelegate.swift in Sources */,
 				9E3691272354D06C00C40978 /* SocketRocketViewController.m in Sources */,
+				63538DE6235841CC00D4259B /* MySessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

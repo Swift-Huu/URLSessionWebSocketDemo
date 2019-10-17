@@ -11,15 +11,22 @@ import Starscream
 
 class StarscreamViewController: BaseWSViewController {
     var socket: WebSocket?
+    let mySessionManager = MySessionManager.init()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let urlStr = "ws://localhost:8090/"
-        let urlStr = "ws://121.40.165.18:8800"
-        socket = .init(url: URL.init(string: urlStr)!)
-        socket?.delegate = self
-        socket?.connect()
+//        let wsStr = "ws://localhost:8090/"
+        let wsStr = "ws://121.40.165.18:8800"
+//        socket = .init(url: URL.init(string: wsStr)!)
+//        socket?.delegate = self
+//        socket?.connect()
+        if #available(iOS 13.0, *) {
+            mySessionManager.WSRequest(ws: wsStr)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     deinit {
+        print("StarscreamViewController.deinit")
         socket?.disconnect()
         socket?.delegate = nil
         socket = nil

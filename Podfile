@@ -9,6 +9,9 @@ target 'WebSocketDemo' do
   pod 'MBProgressHUD'
   pod 'SnapKit'
   pod 'Masonry'
+  pod 'Alamofire'
+#  pod 'TensorFlowLiteSwift'
+#  pod 'GoogleWebRTC'
   # Pods for WebSocketDemo
 
 end
