@@ -13,6 +13,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let searchBar = UISearchBar.init(frame: .init(x: 0, y: 0, width: 200, height: 20))
+        navigationItem.titleView = searchBar
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -30,9 +32,14 @@ class ViewController: UITableViewController {
                 navigationController?.pushViewController(vc, animated: true)
             } else {
             }
+            case 3:
+                if #available(iOS 13.0, *) {
+                    let vc = SessionWebSocketViewController2()
+                    navigationController?.pushViewController(vc, animated: true)
+            }
             
-        default:
-            print("default")
+            default:
+                print("default")
         }
     }
 }

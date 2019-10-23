@@ -44,6 +44,7 @@ wss.on('connection', function(ws) {
     });
 
     console.log(`client ${client_uuid} connected`);
+    broadcastSend("message", "成功连接", nickname);
     /**
      * 关闭服务，从客户端监听列表删除
      */
